@@ -43,11 +43,17 @@ nav {
 }
 
 #steampage {
-  border: #2f4442 solid 2px;
+  border: #efdebf solid 1.5px;
   padding: 12px;
   border-radius: 10px;
-  background-color: rgba(47, 68, 66, 0.5);
+  background-color: rgba(114, 148, 127, 0.25);
   color: rgba(239, 222, 191, 1);
+  transition: background-color 0.3s ease;
+}
+
+#steampage:hover {
+  background-color: rgba(47, 68, 66, 1);
+  text-decoration: none;
 }
 
 ul {
@@ -63,6 +69,10 @@ li {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 body {
@@ -82,7 +92,60 @@ main {
   flex-direction: column;
   color: var(--main-white);
   align-items: center;
+  justify-content: space-evenly;
+}
+
+p {
+  text-align: center;
+  font-size: 32px;
+  max-width: 50%;
+}
+
+img {
+  max-width: 80%;
 }
 
 .herobuttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  text-align: center;
+}
+
+#playtester {
+  background-color: rgba(239, 222, 191, 0.5);
+  color: #efdebf;
+  padding: 20px;
+  border-radius: 15px;
+  transform: scale(1);
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+#playtester:hover {
+  transform: scale(1.05);
+  background-color: rgba(239, 222, 191, 0.75);
+  color: #efdebf;
+  text-decoration: none;
+}
+
+#learn {
+  background-color: rgba(114, 148, 127, 0.25);
+  color: #efdebf;
+  padding: 20px;
+  border-radius: 15px;
+  margin-left: 100px;
+  transform: scale(1);
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+#learn:hover {
+  transform: scale(1.05);
+  background-color: rgba(47, 68, 66, 0.75);
+  text-decoration: none;
 }
